@@ -1,10 +1,10 @@
-import pyxel as py, random as wtf, time as ftg
+import pyxel as py, random
 
 py.init(128,128,"STEWARDLE")
 py.load("assets/f1.pyxres",True,True,False,False)
 py.cls(0)
 pilots,pilot,col,guess,guesses,gagne={"Leclerc":['LEC','3',['FE'],'16','25','17','5']},'',[[1 for i in range(7)] for j in range(5)],-1,[],False
-mystery=wtf.choice(list(pilots.keys()))
+mystery=random.choice(list(pilots.keys()))
 
 def draw():
     py.text(48,2,"STEWARDLE",7)
