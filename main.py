@@ -1,9 +1,10 @@
 import pyxel as py, random
+from database import pilots
 
 py.init(128,128,"STEWARDLE")
 py.load("assets/f1.pyxres",True,True,False,False)
 py.cls(0)
-pilots,pilot,col,guess,guesses,gagne={"Leclerc":['LEC','3',['FE'],'16','25','17','5']},'',[[1 for i in range(7)] for j in range(5)],-1,[],False
+pilot,col,guess,guesses,gagne='',[[1 for i in range(7)] for j in range(5)],-1,[],False
 mystery=random.choice(list(pilots.keys()))
 
 def draw():
@@ -46,13 +47,15 @@ def update():
         for i in range(len(pilots[pilot])):
             if pilots[pilot][i]==pilots[mystery][i] and i==0:
                 col[guess]=[11 for j in range(7)]
-            elif pilots[pilot][i]<pilots[mystery][i] and i!=0 and i!=2:
+            elif pilots[pilot][i]<pilots[mystery][i] and i>2:
                 col[guess][i]=10
-            elif pilots[pilot][i]>pilots[mystery][i] and i!=0 and i!=2:
+            elif pilots[pilot][i]>pilots[mystery][i] and i>2:
                 col[guess][i]=14
-            elif pilots[pilot][i]==pilots[mystery][i] and i!=0 and i!=2:
+            elif pilots[pilot][i]==pilots[mystery][i] and i>2:
                 col[guess][i]=11
-            elif pilots[pilot][i][0]==pilots[mystery][i][0]:
+            elif pilots[pilot][i][0]==pilots[mystery][i][0] and i!=1:
+                col[guess][i]=11
+            elif pilots[pilot][i]==pilots[mystery][i] and i==1:
                 col[guess][i]=11
             else:
                 col[guess][i]=8
