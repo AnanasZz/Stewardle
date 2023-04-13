@@ -1,4 +1,6 @@
-pilots={"Verstappen":["VER","0",["RB","TOR"],"33","25","2015","37"],
+pilots={
+        #2023 season#
+        "Verstappen":["VER","0",["RB","TOR"],"33","25","2015","37"],
         "Perez":["PER","1",["RB","RP","FI"],"11","33","2014","5"],
         "Alonso":["ALO","2",["AST","ALP","MCL","FER","REN","MIN"],"14","41","2001","32"],
         "Hamilton":["HAM","3",["MER","MCL"],"44","38","2007","103"],
@@ -17,7 +19,8 @@ pilots={"Verstappen":["VER","0",["RB","TOR"],"33","25","2015","37"],
         "Magnussen":["MAG","12",["HAA","REN","MCL"],"20","30","2014","0"],
         "Albon":["ALB","13",["WIL","RB","TOR"],"23","27","2019","0"],
         "Sargeant":["ZHO","14",["WIL"],"2","22","2023","0"],
-        "De Vries":["DEV","0",["AT"],"21","23","2022","0"],}
+        "De Vries":["DEV","0",["AT"],"21","23","2022","0"],
+        }
 
 # Flag Index
 # 0=netherlands, 1=mexico, 2=spain, 3=uk, 4=canada, 5=germany, 6=monaco, 7=finland, 8=france, 9=australia, 10=china, 11=japan, 12=danemark, 13=thailand, 14=usa
