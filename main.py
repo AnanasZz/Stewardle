@@ -6,7 +6,6 @@ py.load("assets/f1.pyxres",True,True,False,False)
 py.cls(0)
 pilot,col,guess,guesses,gagne='',[[1 for i in range(7)] for j in range(5)],-1,[],False
 mystery=random.choice(list(pilots.keys()))
-mystery='Piastri'
 print('''Verstappen -> V
 Perez -> P
 Alonso -> A
@@ -58,7 +57,7 @@ def draw():
             for j in range(1):
                 py.rect(i*17+7,j*17+26,13,13,5)
         py.text(7,26+17*guess,f"{pilots[pilot][0]}",7)
-        py.blt(24,26+17*guess,0,int(pilots[pilot][1])*13+1,0,13,13)
+        py.blt(24,26+17*guess,0,int(pilots[pilot][1])*13,0,13,13)
         py.text(41,26+17*guess,f"{pilots[pilot][2][0]}   {int(pilots[pilot][3])}  {int(pilots[pilot][4])} {int(pilots[pilot][5])}  {int(pilots[pilot][6])}",7)
         py.text(50,60,"WINNER !",7)
     if gagne=='LOST':
