@@ -126,6 +126,22 @@ def update():
         pilot='De Vries'
         guesses.append(pilot)
         guess+=1
+    if py.btnr(py.KEY_V) and py.btn(py.KEY_E) and py.btn(py.KEY_T):
+        pilot='Vettel'
+        guesses.append(pilot)
+        guess+=1
+    if py.btnr(py.KEY_R) and py.btn(py.KEY_I) and py.btn(py.KEY_C):
+        pilot='Ricciardo'
+        guesses.append(pilot)
+        guess+=1
+    if py.btnr(py.KEY_S) and py.btn(py.KEY_C) and py.btn(py.KEY_H):
+        pilot='Schumacher'
+        guesses.append(pilot)
+        guess+=1
+    if py.btnr(py.KEY_L) and py.btn(py.KEY_A) and py.btn(py.KEY_T):
+        pilot='Latifi'
+        guesses.append(pilot)
+        guess+=1
     if pilot!='':
         col[guess][0]=8
         if pilots[pilot][0]==pilots[mystery][0]:
