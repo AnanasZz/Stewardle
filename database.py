@@ -20,7 +20,27 @@ pilots={
         "Albon":["ALB","13",["WIL","RB","TOR"],"23","27","2019","0"],
         "Sargeant":["ZHO","14",["WIL"],"2","22","2023","0"],
         "De Vries":["DEV","0",["AT"],"21","23","2022","0"],
+
+        #2022 season#
+        "Vettel":["VET","5",["AST","FER","RB","TOR","BMW"],"5","35","2007","53"],
+        "Ricciardo":["RIC","9",["MCL","REN","RB","TOR","HRT"],"3","33","2011","8"],
+        "Schumacher":["SCH","5",["HAA"],"47","24","2021","0"],
+        "Latifi":["LAT","4",["WIL"],"6","27","2020","0"],
         }
 
 # Flag Index
-# 0=netherlands, 1=mexico, 2=spain, 3=uk, 4=canada, 5=germany, 6=monaco, 7=finland, 8=france, 9=australia, 10=china, 11=japan, 12=danemark, 13=thailand, 14=usa
+# 0=netherlands, 
+# 1=mexico, 
+# 2=spain,
+# 3=uk, 
+# 4=canada, 
+# 5=germany, 
+# 6=monaco, 
+# 7=finland, 
+# 8=france, 
+# 9=australia, 
+# 10=china, 
+# 11=japan, 
+# 12=danemark, 
+# 13=thailand, 
+# 14=usa
