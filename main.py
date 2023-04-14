@@ -1,4 +1,4 @@
-import pyxel as py, random, time
+import pyxel as py, random
 from database import pilots
 
 py.init(128,128,"STEWARDLE")
