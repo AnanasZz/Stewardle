@@ -6,27 +6,7 @@ py.load("assets/f1.pyxres",True,True,False,False)
 py.cls(0)
 pilot,col,guess,guesses,gagne='',[[1 for i in range(7)] for j in range(5)],-1,[],False
 mystery=random.choice(list(pilots.keys()))
-print('''Verstappen -> V
-Perez -> P
-Alonso -> A
-Hamilton -> H
-Sainz -> S
-Stroll -> T
-Russell -> R
-Norris -> N
-Hulkenberg -> K
-Leclerc -> L
-Bottas -> B
-Ocon -> O
-Piastri -> I
-Gasly -> G
-Zhou -> Z
-Tsunoda -> D
-Magnussen -> E
-Albon -> J
-Sargeant -> Q
-De Vries -> X
-Yellow -> Mystery pilot's corresponding number is strictly higher.
+print('''Yellow -> Mystery pilot's corresponding number is strictly higher.
 Salmon -> Mystery pilot's corresponding number is strictly lower.
 Green -> The mystery pilot has the same thing.
 Red -> The mystery pilot does not have the same thing.''')
@@ -66,83 +46,83 @@ def draw():
 
 def update():
     global pilots,pilot,col,mystery,guess,guesses,gagne
-    if py.btnr(py.KEY_L):
+    if py.btnr(py.KEY_L) and py.btn(py.KEY_E) and py.btn(py.KEY_C):
         pilot='Leclerc'
         guesses.append(pilot)
         guess+=1
-    if py.btnr(py.KEY_V):
+    if py.btnr(py.KEY_V) and py.btn(py.KEY_E) and py.btn(py.KEY_R):
         pilot='Verstappen'
         guesses.append(pilot)
         guess+=1
-    if py.btnr(py.KEY_P):
+    if py.btnr(py.KEY_P) and py.btn(py.KEY_E) and py.btn(py.KEY_R):
         pilot='Perez'
         guesses.append(pilot)
         guess+=1
-    if py.btnr(py.KEY_A):
+    if py.btnr(py.KEY_A) and py.btn(py.KEY_L) and py.btn(py.KEY_O):
         pilot='Alonso'
         guesses.append(pilot)
         guess+=1
-    if py.btnr(py.KEY_H):
+    if py.btnr(py.KEY_H) and py.btn(py.KEY_A) and py.btn(py.KEY_M):
         pilot='Hamilton'
         guesses.append(pilot)
         guess+=1
-    if py.btnr(py.KEY_S):
+    if py.btnr(py.KEY_S) and py.btn(py.KEY_A) and py.btn(py.KEY_I):
         pilot='Sainz'
         guesses.append(pilot)
         guess+=1
-    if py.btnr(py.KEY_T):
+    if py.btnr(py.KEY_S) and py.btn(py.KEY_T) and py.btn(py.KEY_R):
         pilot='Stroll'
         guesses.append(pilot)
         guess+=1
-    if py.btnr(py.KEY_R):
+    if py.btnr(py.KEY_R) and py.btn(py.KEY_U) and py.btn(py.KEY_S):
         pilot='Russell'
         guesses.append(pilot)
         guess+=1
-    if py.btnr(py.KEY_N):
+    if py.btnr(py.KEY_N) and py.btn(py.KEY_O) and py.btn(py.KEY_R):
         pilot='Norris'
         guesses.append(pilot)
         guess+=1
-    if py.btnr(py.KEY_K):
+    if py.btnr(py.KEY_H) and py.btn(py.KEY_U) and py.btn(py.KEY_L):
         pilot='Hulkenberg'
         guesses.append(pilot)
         guess+=1
-    if py.btnr(py.KEY_B):
+    if py.btnr(py.KEY_B) and py.btn(py.KEY_O) and py.btn(py.KEY_T):
         pilot='Bottas'
         guesses.append(pilot)
         guess+=1
-    if py.btnr(py.KEY_O):
+    if py.btnr(py.KEY_O) and py.btn(py.KEY_C) and py.btn(py.KEY_N):
         pilot='Ocon'
         guesses.append(pilot)
         guess+=1
-    if py.btnr(py.KEY_I):
+    if py.btnr(py.KEY_P) and py.btn(py.KEY_I) and py.btn(py.KEY_A):
         pilot='Piastri'
         guesses.append(pilot)
         guess+=1
-    if py.btnr(py.KEY_G):
+    if py.btnr(py.KEY_G) and py.btn(py.KEY_A) and py.btn(py.KEY_S):
         pilot='Gasly'
         guesses.append(pilot)
         guess+=1
-    if py.btnr(py.KEY_Z):
+    if py.btnr(py.KEY_Z) and py.btn(py.KEY_H) and py.btn(py.KEY_O):
         pilot='Zhou'
         guesses.append(pilot)
         guess+=1
-    if py.btnr(py.KEY_D):
+    if py.btnr(py.KEY_T) and py.btn(py.KEY_S) and py.btn(py.KEY_U):
         pilot='Tsunoda'
         guesses.append(pilot)
         guess+=1
-    if py.btnr(py.KEY_E):
+    if py.btnr(py.KEY_M) and py.btn(py.KEY_A) and py.btn(py.KEY_G):
         pilot='Magnussen'
         guesses.append(pilot)
         guess+=1
-    if py.btnr(py.KEY_J):
+    if py.btnr(py.KEY_A) and py.btn(py.KEY_L) and py.btn(py.KEY_B):
         pilot='Albon'
         guesses.append(pilot)
         guess+=1
-    if py.btnr(py.KEY_Q):
+    if py.btnr(py.KEY_S) and py.btn(py.KEY_A) and py.btn(py.KEY_R):
         pilot='Sargeant'
         guesses.append(pilot)
         guess+=1
-    if py.btnr(py.KEY_X):
+    if py.btnr(py.KEY_D) and py.btn(py.KEY_E) and py.btn(py.KEY_V):
         pilot='De Vries'
         guesses.append(pilot)
         guess+=1
